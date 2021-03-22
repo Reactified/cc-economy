@@ -1,7 +1,7 @@
 --/ Dynamic Shop / Reactified /--
 
 --/ Automatic Updating /--
-local h = http.get("https://raw.githubusercontent.com/Reactified/cc-economy/master/shop.lua")
+local h = http.get("https://raw.githubusercontent.com/Reactified/econcraft/master/shop.lua")
 if h then
     f = fs.open(shell.getRunningProgram(),"r")
     local data = f.readAll()
