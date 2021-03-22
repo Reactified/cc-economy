@@ -31,7 +31,7 @@ local modem = peripheral.find("modem")
 
 --/ Shop API /--
 if not fs.exists("/api.lua") then
-    h = http.get("https://raw.githubusercontent.com/Reactified/cc-economy/master/api.lua")
+    h = http.get("https://raw.githubusercontent.com/Reactified/econcraft/master/api.lua")
     if h then
         f = fs.open("/api.lua","w")
         f.writeLine(h.readAll())
