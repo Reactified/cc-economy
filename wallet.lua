@@ -1,6 +1,6 @@
 --/ Gold Wallet /--
 if not fs.exists('/auAPI.lua') then
-    local h = http.get("https://raw.githubusercontent.com/Reactified/cc-economy/master/api.lua")
+    local h = http.get("https://raw.githubusercontent.com/Reactified/econcraft/master/api.lua")
     if h then
         f = fs.open("/auAPI.lua","w")
         f.writeLine(h.readAll())
@@ -8,7 +8,7 @@ if not fs.exists('/auAPI.lua') then
         h.close()
     end
 end
-local h = http.get("https://raw.githubusercontent.com/Reactified/cc-economy/master/wallet.lua")
+local h = http.get("https://raw.githubusercontent.com/Reactified/econcraft/master/wallet.lua")
 if h then
     f = fs.open(shell.getRunningProgram(),"r")
     local data = f.readAll()
